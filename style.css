@@ -1,0 +1,121 @@
+body {
+    font-family: 'Helvetica';
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+
+}
+
+.header{
+width: 100%;
+height: 69px;
+display: block;
+background-color: black;
+position: fixed;
+top: 0px; /* this makes it so that the mission image doesn't go above 
+the header, instead it's fixed below the header
+don't use padding: top 0px */
+border-bottom: 1px solid seashell;
+
+}
+
+.logo{
+    height: 50px;
+    float: left;   
+    padding-left: 10px;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    }
+    
+    .navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    text-decoration: underline;
+    color: white;
+    }
+
+.mission-container{
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*os1t3f*_ga*MTkyMTIwODg0Ni4xNjQ0OTY5NjU3*_ga_3LRZM6TM9L*MTY1MTI1MTAzMC44Ny4xLjE2NTEyNTExNzguNDE.);
+    /* you can put an image in CSS */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    max-width: 1200px;
+    margin: 40px auto 40px auto;
+    display: flex;
+}
+/* margin auto automatically centers the text within the div box, with flex*/
+.mission_text{
+    margin: auto;
+    background-color: black;
+    width: 100%;
+}
+
+.trend-container{
+    display: inline-flex; /* Allows flexbox to be inline with other flexboxes. Controls the alignment of items on the Cross Axis*/
+    max-width: 1000px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center; /*use for alignment in flexbox*/
+    justify-content: center; /*property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container */
+}
+
+.trend img{
+    height: 200px;
+    width: 300px;
+    padding: 10px 10px;
+
+}
+
+.banner{
+    height: 500px;
+    max-width: 1200px;
+    margin: 40px auto auto auto;
+    padding-top: 85px;
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*dcbfwb*_ga*MTkyMTIwODg0Ni4xNjQ0OTY5NjU3*_ga_3LRZM6TM9L*MTY1MTI1MTAzMC44Ny4xLjE2NTEyNTExNzguNDE.);
+    background-repeat:no-repeat; /* Means you don't want the background to repeat, or make a collage*/
+    background-position: center;
+    background-size: cover; /*Scales the image (while preserving its ratio) to the smallest possible size to fill the container*/
+}
+
+.text-top{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.box-container{
+    max-width: 1050px;
+    margin: 15px auto auto auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    height: 300px;
+    padding: 20px;
+    margin-bottom: auto;
+    flex-basis: 30%;  /*width*/
+    box-sizing: border-box; /* need to add this when there's height & padding with flex box*/
+    background-color: black;
+    opacity: 1;
+}
+
+footer{
+    text-align: left;
+    padding: 20px;
+}
